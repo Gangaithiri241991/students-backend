@@ -10,6 +10,7 @@ dotenv.config();
 const PORT = process.env.PORT
 //initiating server
 const app = express();
+app.use(cors());
 //middleware
 app.use(express.json());
 app.use(cors());
